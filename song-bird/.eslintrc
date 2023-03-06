@@ -1,0 +1,17 @@
+{
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "requireConfigFile": false,
+    },
+    "extends": ["airbnb"],
+    "rules": {
+        "indent": ["error", 4],
+        "no-console": "off",
+        "no-param-reassign": 0,
+        "max-len": ["error", { "code": 500 }],
+        // "linebreak-style": ["error", "windows"]
+    },
+    "env": {
+        "browser": true
+    }
+}
