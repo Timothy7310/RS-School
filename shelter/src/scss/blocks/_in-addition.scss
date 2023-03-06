@@ -1,0 +1,73 @@
+.in-addition{
+    background-color: var(--color-light-l);
+    &__wrap{
+        padding: 80px 0px 100px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 30px;
+    }  
+    &__img-container{
+        max-width: 505px;
+    }
+    &__text{
+        max-width: 380px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 19px;
+    } 
+    &__title{
+        font-size: var(--fz-h2);
+        line-height: var(--lh);
+        color: var(--color-dark-l);
+        font-weight: 400;
+        margin: 0px;
+        letter-spacing: 0.06em;
+    }
+    &__bank{
+        &-info{
+            font-size: var(--fz-primary);
+            line-height: var(--lh);
+            color: var(--color-dark-l);
+            letter-spacing: 0.06em;
+        }
+        &-btn{
+            padding: 9px 15px;
+            border-radius: 9px;
+            background-color: var(--color-primary);
+            display: inline-flex;
+            align-items: center;
+            column-gap: 15px;
+            &:hover{
+                & .in-addition__bank-btn-number{
+                    color: var(--color-dark-3xl);
+                }
+                & .in-addition__bank-btn-img{
+                    fill: var(--color-dark-l);
+                }
+            }
+        }
+        &-btn-img{
+            width: 30px;
+            height: 23px;
+            fill: var(--color-dark-3xl);
+            transition: fill 0.4s ease-in-out;
+        }
+        &-btn-number{
+            font-size: 20px;
+            line-height: var(--lh);
+            color: var(--color-dark-l);
+            letter-spacing: 0.06em;
+            transition: color 0.4s ease-in-out;
+        }
+    }
+    &__info{
+        font-family: "Arial", sans-serif;
+        font-style: italic;
+        font-size: 12px;
+        line-height: calc(var(--lh) * 1.17);
+        color: var(--color-dark-m);
+        margin: 0px;
+    }
+}
