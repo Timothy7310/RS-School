@@ -1,0 +1,126 @@
+.cars{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &__title{
+        color: var(--color-white);
+        margin: 0px;
+    }
+    &__page{
+        color: var(--color-white);
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+    &-list{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 30px;
+    }
+    &-item{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &__head{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            &-btn{
+                padding: 5px 10px;
+                border: 1px solid var(--color-accent-secondary);
+                background-color: transparent;
+                border-radius: 5px;
+                color: var(--color-accent-secondary);
+                text-transform: uppercase;
+                font-weight: bold;
+                cursor: pointer;
+                transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+                &:hover{
+                    text-shadow: 0 0 10px #8847ff,
+                    0 0 20px #8847ff,
+                    0 0 30px #8847ff,
+                    0 0 40px #8847ff;
+                    color: var(--color-white)
+                }
+            }
+            &-name{
+                margin: 0px;
+                color: var(--color-white);
+            }
+        }
+        &__manage{
+            display: flex;
+            gap: 5px;
+            &-btn{
+                font-size: 14px;
+                padding: 5px 10px;
+                background-color: transparent;
+                border-radius: 5px;
+                text-transform: uppercase;
+                font-weight: bold;
+                cursor: pointer;
+                transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+                &:hover{
+                    text-shadow: 0 0 10px #8847ff,
+                    0 0 20px #8847ff,
+                    0 0 30px #8847ff,
+                    0 0 40px #8847ff;
+                    color: var(--color-white)
+                }
+                &:disabled{
+                    color: var(--color-secondary);
+                    border: 1px solid var(--color-secondary);
+                    pointer-events: none;
+                }
+                &--start{
+                    color: var(--color-accent);
+                    border: 1px solid var(--color-accent);
+                }
+                &--reset{
+                    color: var(--color-warning);
+                    border: 1px solid var(--color-warning);
+                }
+            }
+        }
+        &__road{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 3px dashed var(--color-white);
+        }
+        &__car{
+            transform: scale(-1, 1);
+            position: relative;
+        }
+        &__finish{
+            fill: var(--color-warning);
+        }
+    }
+    &__nav{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        &-btn{
+            padding: 5px 10px;
+            border: 1px solid var(--color-accent);
+            background-color: transparent;
+            border-radius: 5px;
+            color: var(--color-accent);
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+            &:hover{
+                text-shadow: 0 0 10px #8847ff,
+                0 0 20px #8847ff,
+                0 0 30px #8847ff,
+                0 0 40px #8847ff;
+                color: var(--color-white)
+            }
+            &:disabled{
+                border: 1px solid var(--color-secondary);
+                color: var(--color-secondary);
+                pointer-events: none;
+            }
+        }
+    }
+}

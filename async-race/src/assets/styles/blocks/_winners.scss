@@ -1,0 +1,101 @@
+.winners{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    &__title{
+        color: var(--color-white);
+        margin: 0;
+    }
+    &__page{
+        color: var(--color-white);
+        margin: 0;
+    }
+    &-table{
+        border:1px solid #b3adad;
+        border-collapse:collapse;
+        padding:5px;
+        &__header{
+            border:1px solid #b3adad;
+            padding:5px;
+            background-color: transparent;
+            color: var(--color-accent);
+        }
+        &__item{
+            border:1px solid #b3adad;
+            text-align: start;
+            padding:5px;
+            background-color: transparent;
+            color: var(--color-white);
+        }
+    }
+    &-sort{
+        &__win{
+            background-color: transparent;
+            border: none;
+            color: inherit;
+            padding: 0px;
+            cursor: pointer;
+            position: relative;
+            &--asc{
+                &::after{
+                    content: '↑'
+                }
+            }
+            &--desc{
+                &::after{
+                    content: '↓'
+                }
+            }
+        }
+        &__time{
+            background-color: transparent;
+            border: none;
+            color: inherit;
+            padding: 0px;
+            cursor: pointer;
+            position: relative;
+            &--asc{
+                &::after{
+                    content: '↑'
+                }
+            }
+            &--desc{
+                &::after{
+                    content: '↓'
+                }
+            }
+        }
+    }
+    &-car{
+        width: 80px;
+    }
+    &-nav{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        &__btn{
+            padding: 5px 10px;
+            border: 1px solid var(--color-accent);
+            background-color: transparent;
+            border-radius: 5px;
+            color: var(--color-accent);
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+            &:hover{
+                text-shadow: 0 0 10px #8847ff,
+                0 0 20px #8847ff,
+                0 0 30px #8847ff,
+                0 0 40px #8847ff;
+                color: var(--color-white)
+            }
+            &:disabled{
+                border: 1px solid var(--color-secondary);
+                color: var(--color-secondary);
+                pointer-events: none;
+            }
+        }
+    }
+}

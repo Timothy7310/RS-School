@@ -1,0 +1,75 @@
+.manage{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 50px;
+    &-start{
+        padding: 5px 10px;
+        border: 1px solid var(--color-accent);
+        background-color: transparent;
+        border-radius: 5px;
+        color: var(--color-accent);
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+        &:hover{
+            text-shadow: 0 0 10px #8847ff,
+            0 0 20px #8847ff,
+            0 0 30px #8847ff,
+            0 0 40px #8847ff;
+            color: var(--color-white)
+        }
+        &:disabled{
+            color: var(--color-secondary);
+            border: 1px solid var(--color-secondary);
+            pointer-events: none;
+        }
+    }
+    &-reset{
+        padding: 5px 10px;
+        border: 1px solid var(--color-accent);
+        background-color: transparent;
+        border-radius: 5px;
+        color: var(--color-accent);
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+        &:hover{
+            text-shadow: 0 0 10px #8847ff,
+            0 0 20px #8847ff,
+            0 0 30px #8847ff,
+            0 0 40px #8847ff;
+            color: var(--color-white)
+        }
+        &:disabled{
+            color: var(--color-secondary);
+            border: 1px solid var(--color-secondary);
+            pointer-events: none;
+        }
+    }
+    &-generate{
+        padding: 5px 10px;
+        border: 1px solid var(--color-accent-secondary);
+        background-color: transparent;
+        border-radius: 5px;
+        color: var(--color-accent-secondary);
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+        &:hover{
+            text-shadow: 0 0 10px #8847ff,
+            0 0 20px #8847ff,
+            0 0 30px #8847ff,
+            0 0 40px #8847ff;
+            color: var(--color-white)
+        }
+        &:disabled{
+            color: var(--color-secondary);
+            border: 1px solid var(--color-secondary);
+            pointer-events: none;
+        }
+    }
+}

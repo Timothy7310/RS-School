@@ -1,0 +1,39 @@
+// {
+//     "parser": "@babel/eslint-parser",
+//     "parserOptions": { "project": ["./tsconfig.json"] },
+//     "extends": ["airbnb", "'airbnb-typescript/base'"],
+//     "rules": {
+//         "@typescript-eslint/no-explicit-any": "error",
+//         "indent": ["error", 4],
+//         "no-console": "off",
+//         "no-param-reassign": 0
+//     },
+//     "env": {
+//         "browser": true
+//     }
+// }
+
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "airbnb-base",
+        "airbnb-typescript/base"
+    ],
+    "overrides": [],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "plugins": ["@typescript-eslint"],
+    "rules": {
+        "no-console": "off",
+        "linebreak-style": 0,
+        "@typescript-eslint/indent": ["error", 4],
+        "@typescript-eslint/no-explicit-any": "error"
+    }
+}
