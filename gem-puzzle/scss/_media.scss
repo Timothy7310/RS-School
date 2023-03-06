@@ -1,0 +1,64 @@
+
+
+@media screen and  (max-width:450px){
+    .puzzle{
+        &-app{
+            width: 90%;
+            &[data-size="6"]{
+                .puzzle-app__btn{
+                    font-size: 31px;
+                }
+            }
+            &[data-size="7"]{
+                .puzzle-app__btn{
+                    font-size: 24px;
+                }
+            }
+            &[data-size="8"]{
+                .puzzle-app__btn{
+                    font-size: 20px;
+                }
+            }
+        }
+        &-sizes{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            &__text{
+                width: 100%;
+                margin-bottom: 10px;
+                text-align: center;
+                word-spacing: 17px;
+            }
+        }
+        
+    }
+}
+
+@media screen and(max-width:370px){
+    .puzzle{
+        &-app{
+            width: 90%;
+            &[data-size="5"]{
+                .puzzle-app__btn{
+                    font-size: 33px;
+                }
+            }
+            &[data-size="6"]{
+                .puzzle-app__btn{
+                    font-size: 25px;
+                }
+            }
+            &[data-size="7"]{
+                .puzzle-app__btn{
+                    font-size: 19px;
+                }
+            }
+            &[data-size="8"]{
+                .puzzle-app__btn{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

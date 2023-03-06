@@ -1,0 +1,134 @@
+.puzzle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 20px;
+    position: relative;
+    &-nav{
+        &-list{
+            display: flex;
+            grid-gap: 10px;
+        }
+        &__btn{
+            height: 100%;
+        }
+    }
+    &-info{
+        display: flex;
+        grid-gap: 10px;
+        color: var(--color-primary);
+    }
+    &-app{
+        aspect-ratio: 1 / 1;
+        width: 400px;
+        position: relative;
+        &[data-size="3"]{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        &[data-size="4"]{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+        &[data-size="5"]{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+        }
+        &[data-size="6"]{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+        }
+        &[data-size="7"]{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+        }
+        &[data-size="8"]{
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+        }
+        &--lock{
+            pointer-events: none;
+        }
+        &__btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            font-size: 40px;
+            background-color: var(--bg-puzzle);
+            cursor: pointer;
+            position: relative;
+            // animation: puzzleAppear 1s linear;
+            &--empty{
+                border: none;
+                position: relative;
+                cursor: not-allowed;
+                &::before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    background-image: url(../assets/icons/empty-box.png);
+                    background-size: 100% 100%;
+                }
+            }
+        }
+        &[data-size="7"]{
+            .puzzle-app__btn{
+                font-size: 37px;
+            }
+        }
+        &[data-size="8"]{
+            .puzzle-app__btn{
+                font-size: 30px;
+            }
+        }
+    }
+    &-nav{
+        position: relative;
+        z-index: 101;
+    }
+    &-leaderboard{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 100;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: beige;
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+        transition: 0.3s ease-in-out;
+        &--active{
+            display: flex;
+            visibility: visible;
+            opacity: 1;
+        }
+        &__list{
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+    &-current{
+        color: var(--color-second);
+    }
+    &-sizes{
+        &__text{
+            color: var(--color-second);
+        }
+    }
+}
