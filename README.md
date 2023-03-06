@@ -1,19 +1,71 @@
 # RS-School
 
+
 ## 2022Q1 stage 1
-1. [Shelter](https://timothy7310.github.io/RS-School/shelter/index.html) - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/stream1/shelter/README.md) `school's private repository`
-2. [Virtual-Keyboard](https://timothy7310.github.io/RS-School/virtual-keyboard/index.html) - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/virtual-keyboard/virtual-keyboard-ru.md) `For watch commit history:` [link](https://github.com/Timothy7310/virtual-keyboard)
-3. [CSS-Meme-Slider](https://timothy7310.github.io/RS-School/cssMemSlider/index.html) - [task description](https://github.com/rolling-scopes-school/tasks/tree/master/tasks/css-meme-slider) `For watch commit history:` [link](https://github.com/Timothy7310/cssMemSlider)
-4. [HTML Builder](https://github.com/Timothy7310/HTML-builder) - [task description](https://github.com/rolling-scopes-school/tasks/tree/master/stage1/modules/html-builder) `Work with Node JS`
-5. [Clean-Code-s1e1](https://github.com/Timothy7310/clean-code-s1e1/tree/clean-code-s1e1) - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/clean-code-s1e1.md) `Refactor code`
+
+### Shelter
+- `Deploy:` [link](https://timothy7310.github.io/RS-School/shelter/index.html)  
+- `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/stream1/shelter/README.md)  
+- `School's private repository`
+
+### Virtual-Keyboard
+- `Deploy:` [link](https://timothy7310.github.io/RS-School/virtual-keyboard/index.html)  
+- `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/virtual-keyboard/virtual-keyboard-ru.md)  
+- `For watch commit history:` [link](https://github.com/Timothy7310/virtual-keyboard)
+
+### CSS-Meme-Slider
+- `Deploy:` [link](https://timothy7310.github.io/RS-School/cssMemSlider/index.html)  
+- `Task description:` [link](https://github.com/rolling-scopes-school/tasks/tree/master/tasks/css-meme-slider)  
+- `For watch commit history:` [link](https://github.com/Timothy7310/cssMemSlider)
+
+### HTML Builder
+- `Work with Node JS` (without deploy)  
+- `Task description:` [link](https://github.com/rolling-scopes-school/tasks/tree/master/stage1/modules/html-builder)  
+- `For watch commit history:` [link](https://github.com/Timothy7310/HTML-builder)
+
+### Clean-Code-s1e1
+- `Refactor code`
+- `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/clean-code-s1e1.md)  
+- `For watch commit history:` [link](https://github.com/Timothy7310/clean-code-s1e1/tree/clean-code-s1e1)
+
 
 ## 2023Q3 stage 1
-1. [Online-Zoo](https://timothy7310.github.io/RS-School/online-zoo/index.html) - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/stream2/online-zoo/README.md) `school's private repository`
-2. [Puzzle Game](https://timothy7310.github.io/RS-School/gem-puzzle/index.html) - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/stage-1/dom-api/codejam-the-gem-puzzle.md) `school's private repository`
-3. [Song Bird](https://timothy7310.github.io/RS-School/song-bird/index.html) - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/songbird/songbird-2022q3.md) `school's private repository`
+
+### Online-Zoo
+- `Deploy:` [link](https://timothy7310.github.io/RS-School/online-zoo/index.html)  
+- `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/stream2/online-zoo/README.md)  
+- `school's private repository`
+
+### Puzzle Game
+- `Deploy:` [link](https://timothy7310.github.io/RS-School/gem-puzzle/index.html)  
+- `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/stage-1/dom-api/codejam-the-gem-puzzle.md)  
+- `school's private repository`
+
+### Song Bird
+- `Deploy:` [link](https://timothy7310.github.io/RS-School/song-bird/index.html)  
+- `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/songbird/songbird-2022q3.md)  
+- `school's private repository`
+
 
 ## 2023Q3 stage 2
-1. [MG-to-TS]() - [task description]()
-2. [Online-Store]() - [task description](https://github.com/rolling-scopes-school/tasks/tree/master/tasks/online-store-team)
-3. [Async Race](https://timothy7310.github.io/RS-School/async-race/index.html) | [task description](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/async-race.md#cross-check) | `school's private repository` | `server`: [link](https://github.com/mikhama/async-race-api)
-4. [RS-Clone]() - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/rsclone/rsclone.md)
+
+### MG-to-TS
+- `Deploy:` [link]()  
+- `Task description:` [link]()  
+- `school's private repository`
+
+### Online-Store
+- `Deploy:` [link]()  
+- `Task description:` [link](https://github.com/rolling-scopes-school/tasks/tree/master/tasks/online-store-team)  
+- `For watch commit history:` [link]()
+
+### Async Race
+- `Deploy:` [link](https://timothy7310.github.io/RS-School/async-race/index.html)  
+- `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/async-race.md#cross-check)  
+- `school's private repository`
+- `server`: [link](https://github.com/mikhama/async-race-api)
+
+### RS-Clone
+- `Deploy:` [link](https://timothy7310.github.io/RS-School/async-race/index.html)  
+- `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/rsclone/rsclone.md)  
+- `For watch commit history:` [link]()
