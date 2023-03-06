@@ -8,12 +8,12 @@
 5. [Clean-Code-s1e1](https://github.com/Timothy7310/clean-code-s1e1/tree/clean-code-s1e1) - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/clean-code-s1e1.md) `Refactor code`
 
 ## 2023Q3 stage 1
-1. [Online-Zoo](https://timothy7310.github.io/RS-School/online-zoo/index.html) - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/stream2/online-zoo/README.md)
-2. [Puzzle Game](https://timothy7310.github.io/RS-School/gem-puzzle/index.html) - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/stage-1/dom-api/codejam-the-gem-puzzle.md)
-3. [Song Bird](https://timothy7310.github.io/RS-School/song-bird/index.html) - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/songbird/songbird-2022q3.md)
+1. [Online-Zoo](https://timothy7310.github.io/RS-School/online-zoo/index.html) - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/stream2/online-zoo/README.md) `school's private repository`
+2. [Puzzle Game](https://timothy7310.github.io/RS-School/gem-puzzle/index.html) - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/stage-1/dom-api/codejam-the-gem-puzzle.md) `school's private repository`
+3. [Song Bird](https://timothy7310.github.io/RS-School/song-bird/index.html) - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/songbird/songbird-2022q3.md) `school's private repository`
 
 ## 2023Q3 stage 2
 1. [MG-to-TS]() - [task description]()
 2. [Online-Store]() - [task description](https://github.com/rolling-scopes-school/tasks/tree/master/tasks/online-store-team)
-3. [Async Race]() - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/async-race.md#cross-check)
+3. [Async Race](https://timothy7310.github.io/RS-School/async-race/index.html) | [task description](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/async-race.md#cross-check) | `school's private repository` | `server`: [link](https://github.com/mikhama/async-race-api)
 4. [RS-Clone]() - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/rsclone/rsclone.md)
