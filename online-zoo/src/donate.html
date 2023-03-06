@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online-zoo Donate</title>
+    <link rel="preload" href="assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <a href="index.html" class="header__logo">
+                    <h1 class="header__logo-title">PetStory <br> <span class="header__logo--span">online</span></h1>
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">About</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link">Map</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link">Zoos</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="donate.html" class="header__nav-link header__nav-link--active">Donate</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link">Contact us</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link"
+                                href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"
+                                target="_blank" rel="nofollow noopener">Designed by &#169;</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="burger" class="header__burger not-active" aria-label="Open menu">
+                    <span class="header__burger-span header__burger-span--1"></span>
+                    <span class="header__burger-span header__burger-span--2"></span>
+                    <span class="header__burger-span header__burger-span--3"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="donate">
+            <div class="donate-bg"></div>
+            <div class="container">
+                <div class="donate__wrap">
+                    <div class="donate__info">
+                        <span class="donate__info-title">THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR
+                            HELP!</span>
+                        <p class="donate__info-text">
+                            Even though the Zoo has been able to reopen, we are at a greatly
+                            reduced capacity with educational programs and public and private events cancelled or
+                            postponed for additional months. We need you now more than ever to help ensure that we
+                            overcome these challenges. We have been actively raising funds in the community, and we are
+                            grateful for the generosity. But much more support is still needed, and we need your help!
+                            Please consider a gift today – no matter what size – to help us sustain our mission.
+                        </p>
+                    </div>
+                    <h2 class="donate__title">Donation Information</h2>
+                    <div class="donate-app">
+                        <h3 class="donate-app__title">
+                            Pick and feed a friend
+                        </h3>
+                        <p class="donate-app__info">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
+                        <div class="donate-app__diet">
+                            <div class="donate-app__diet-day-wrap">
+                                <span class="donate-app__diet-day-count">4</span>
+                                <span class="donate-app__diet-day-text">Panda diet for the day.</span>
+                            </div>
+                            <div class="donate-app__symbol"></div>
+                            <svg class="donate-app__img">
+                                <use href="assets/icons/sprite.svg#panda"></use>
+                            </svg>
+                        </div>
+                        <div class="donate-app-form__wrap">
+                            <span class="donate-app-form__title">Amount</span>
+                            <form class="donate-app-form" action="/" method="GET">
+                                <div class="donate-app-form__progress-bar">
+                                    <label class="donate-app-form__progress-bar-input-wrap">
+                                        <input class="donate-app-form__progress-bar-input" type="radio" id="donate-choice1" name="donate"data-price="5000" value="5000">
+                                        <div class="donate-app-form__progress-bar-input-custom"></div>
+                                        <span class="donate-app-form__progress-bar-input-price">$&nbsp;5000</span>
+                                    </label>
+                                    <label class="donate-app-form__progress-bar-input-wrap">
+                                        <input class="donate-app-form__progress-bar-input" type="radio" id="donate-choice2" name="donate" data-price="2000" value="2000">
+                                        <div class="donate-app-form__progress-bar-input-custom"></div>
+                                        <span class="donate-app-form__progress-bar-input-price">$&nbsp;2000</span>
+                                    </label>
+                                    <label class="donate-app-form__progress-bar-input-wrap">
+                                        <input class="donate-app-form__progress-bar-input" type="radio" id="donate-choice3" name="donate" data-price="1000" value="1000">
+                                        <div class="donate-app-form__progress-bar-input-custom"></div>
+                                        <span class="donate-app-form__progress-bar-input-price">$&nbsp;1000</span>
+                                    </label>
+                                    <label class="donate-app-form__progress-bar-input-wrap">
+                                        <input class="donate-app-form__progress-bar-input" type="radio" id="donate-choice4" name="donate" data-price="500" value="500">
+                                        <div class="donate-app-form__progress-bar-input-custom"></div>
+                                        <span class="donate-app-form__progress-bar-input-price">$&nbsp;500</span>
+                                    </label>
+                                    <label class="donate-app-form__progress-bar-input-wrap">
+                                        <input class="donate-app-form__progress-bar-input" type="radio" id="donate-choice5" name="donate" data-price="250" value="250">
+                                        <div class="donate-app-form__progress-bar-input-custom"></div>
+                                        <span class="donate-app-form__progress-bar-input-price">$&nbsp;250</span>
+                                    </label>
+                                    <label class="donate-app-form__progress-bar-input-wrap">
+                                        <input class="donate-app-form__progress-bar-input" type="radio" id="donate-choice6" name="donate" data-price="100" value="100" checked>
+                                        <div class="donate-app-form__progress-bar-input-custom"></div>
+                                        <span class="donate-app-form__progress-bar-input-price">$&nbsp;100</span>
+                                    </label>
+                                    <label class="donate-app-form__progress-bar-input-wrap">
+                                        <input class="donate-app-form__progress-bar-input" type="radio" id="donate-choice7" name="donate" data-price="50" value="50">
+                                        <div class="donate-app-form__progress-bar-input-custom"></div>
+                                        <span class="donate-app-form__progress-bar-input-price">$&nbsp;50</span>
+                                    </label>
+                                    <label class="donate-app-form__progress-bar-input-wrap">
+                                        <input class="donate-app-form__progress-bar-input" type="radio" id="donate-choice8" name="donate" data-price="25" value="25">
+                                        <div class="donate-app-form__progress-bar-input-custom"></div>
+                                        <span class="donate-app-form__progress-bar-input-price">$&nbsp;25</span>
+                                    </label>
+                                </div>
+                                <div class="donate-app-form__custom-price-wrap">
+                                    <input type="number" class="donate-app-form__custom-price" placeholder="Another amount" maxlength="4">
+                                    <svg class="donate-app-form__custom-price-img">
+                                        <use href="assets/icons/sprite.svg#dollar"></use>
+                                    </svg>
+                                </div>
+                                <div class="donate-app-form__type">
+                                    <label class="donate-app-form__type-wrap">
+                                        <input class="donate-app-form__type-input" name="subscription" type="radio" id="monthly" value="monthly">
+                                        <span class="donate-app-form__type-text">Monthly</span>
+                                        <div class="donate-app-form__type-input-custom"></div>
+                                    </label>
+                                    <label class="donate-app-form__type-wrap">
+                                        <input class="donate-app-form__type-input" name="subscription" type="radio" id="once" value="once" checked>
+                                        <span class="donate-app-form__type-text">Once</span>
+                                        <div class="donate-app-form__type-input-custom"></div>
+                                    </label>
+                                </div>
+                                <button class="btn btn--donate-app" type="submit">Feed a friend now</button>
+                            </form>
+                            <span class="donate-slogan">Share with your friends on social networks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer-links">
+                    <a href="index.html" class="footer-links__logo">
+                        <span class="footer-links__logo-title">PetStory <br class="footer-links__logo-title--br"> <span
+                                class="footer-links__logo--span">online</span></span>
+                    </a>
+                    <a href="donate.html" class="btn btn--footer">donate for volunteers</a>
+                    <ul class="footer-links__social-list">
+                        <li class="footer-links__social-item">
+                            <a href="https://facebook.com/" target="_blank" rel="nofollow noopener" class="footer-links__social-link">
+                                <div class="footer-links__social-link-img-wrap">
+                                    <svg class="footer-links__social-link-img">
+                                        <use href="assets/icons/sprite.svg#fb"></use>
+                                    </svg>
+                                </div>
+                                <span class="footer-links__social-link-text">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="footer-links__social-item">
+                            <a href="https://twitter.com/" target="_blank" rel="nofollow noopener" class="footer-links__social-link">
+                                <div class="footer-links__social-link-img-wrap">
+                                    <svg class="footer-links__social-link-img">
+                                        <use href="assets/icons/sprite.svg#twitter"></use>
+                                    </svg>
+                                </div>
+                                <span class="footer-links__social-link-text">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="footer-links__social-item">
+                            <a href="https://www.instagram.com" target="_blank" rel="nofollow noopener" class="footer-links__social-link">
+                                <div class="footer-links__social-link-img-wrap">
+                                    <svg class="footer-links__social-link-img">
+                                        <use href="assets/icons/sprite.svg#instagram"></use>
+                                    </svg>
+                                </div>
+                                <span class="footer-links__social-link-text">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="footer-links__social-item">
+                            <a href="https://www.youtube.com/" target="_blank" rel="nofollow noopener" class="footer-links__social-link">
+                                <div class="footer-links__social-link-img-wrap">
+                                    <svg class="footer-links__social-link-img">
+                                        <use href="assets/icons/sprite.svg#youtube"></use>
+                                    </svg>
+                                </div>
+                                <span class="footer-links__social-link-text">YouTube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="footer-nav footer-nav--donate">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link footer-nav__link--active">About</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Map</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Zoos</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Contact&nbsp;us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer-newsletter">
+                    <h2 class="footer-newsletter__title">Subscribe to our news</h2>
+                    <form action="/" method="GET" id="form" class="footer-newsletter__form">
+                        <div class="footer-newsletter__input-wrap" id="email-wrap">
+                            <input type="email" name="email" id="email" class="footer-newsletter__input"
+                                placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="footer-newsletter__btn" id="button">Submit</button>
+                    </form>
+                    <div class="footer-designed">
+                        <span class="footer-designed__text">Designed by Alisa Samborskaya</span>
+                        <span class="footer-designed__text">&#169;RSSchool & &#169;Yem Digital 2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="body-overlay"></div>
+    <script src="js/donate.min.js"></script>
+</body>
+
+</html>

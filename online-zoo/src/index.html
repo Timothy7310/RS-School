@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online-zoo</title>
+    <link rel="preload" href="assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <a href="index.html" class="header__logo">
+                    <h1 class="header__logo-title">PetStory <br> <span class="header__logo--span">online</span></h1>
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link header__nav-link--active">About</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link">Map</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link">Zoos</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="donate.html" class="header__nav-link">Donate</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link">Contact us</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link"
+                                href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"
+                                target="_blank" rel="nofollow noopener">Designed by &#169;</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="burger" class="header__burger" aria-label="Open menu">
+                    <span class="header__burger-span header__burger-span--1"></span>
+                    <span class="header__burger-span header__burger-span--2"></span>
+                    <span class="header__burger-span header__burger-span--3"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="favorite">
+            <div class="container">
+                <div class="favorite__wrap">
+                    <div class="favorite__text-wrap">
+                        <h2 class="favorite__title">Watch your <span class="favorite__title--span">favorite</span>
+                            animal online</h2>
+                        <button class="btn btn--favorite">watch online</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="backstage">
+            <div class="container">
+                <div class="backstage__wrap">
+                    <button class="btn btn--backstage">watch online</button>
+                    <picture class="backstage__img-wrap">
+                        <source srcset="assets/img/how-it-works@1x.webp 1x,
+                                assets/img/how-it-works@2x.webp 2x" type="image/webp">
+                        <img src="assets/img/how-it-works@1x.jpg" srcset="assets/img/how-it-works@2x.jpg 2x" alt=""
+                            class="backstage__img">
+                    </picture>
+                    <div class="backstage__text-wrap">
+                        <div class="backstage__text-head">
+                            <h2 class="backstage__text-head-title">The Backstage of the Wilderness World.</h2>
+                            <p class="backstage__text">The site was founded on the basis of a volunteer movement to
+                                protect and care for animals.</p>
+                        </div>
+
+                        <div class="backstage__text-bottom">
+                            <h3 class="backstage__text-bottom-title">How it works</h3>
+                            <p class="backstage__text">
+                                The main goal is to help the animals, as well as the nature
+                                reserves and zoos where they are kept. We are currently working on video projects
+                                targeting pandas in China, eagles on an island near Los Angeles, alligators in Florida
+                                and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <picture class="backstage__bg-img-wrap">
+                <source srcset="assets/img/how-it-works-bg@1x.webp 1x,
+                                assets/img/how-it-works-bg@2x.webp 2x" type="image/webp">
+                <img src="assets/img/how-it-works-bg@1x.png" srcset="assets/img/how-it-works-bg@2x.png 2x" alt=""
+                    class="backstage__bg-img">
+            </picture>
+        </section>
+        <section class="pets">
+            <picture class="pets__bg-img-wrap pets__bg-img-wrap--left">
+                <source srcset="assets/img/animals-bg-left@1x.webp 1x,
+                                assets/img/animals-bg-left@2x.webp 2x" type="image/webp">
+                <img src="assets/img/animals-bg-left@1x.png" srcset="assets/img/animals-bg-left@2x.png 2x" alt=""
+                    class="pets__bg-img pets__bg-img--left">
+            </picture>
+            <div class="container">
+                <div class="pets__wrap">
+                    <button class="pets-slider__btn pets-slider__btn--prev">
+                        <svg class="pets-slider__btn-img">
+                            <use href="assets/icons/sprite.svg#arrow-prev"></use>
+                        </svg>
+                    </button>
+            
+                    
+                    <div class="pets-cards-overflow">
+                        <ul class="pets-cards">
+                        </ul>
+                    </div>
+            
+                    <button class="pets-slider__btn pets-slider__btn--next">
+                        <svg class="pets-slider__btn-img">
+                            <use href="assets/icons/sprite.svg#arrow-next"></use>
+                        </svg>
+                    </button>
+                    <button class="btn btn--pets">
+                        choose your favorite
+                    </button>
+                </div>
+            </div>
+            <picture class="pets__bg-img-wrap pets__bg-img-wrap--right">
+                <source srcset="assets/img/animals-bg-right@1x.webp 1x,
+                                assets/img/animals-bg-right@2x.webp 2x" type="image/webp">
+                <img src="assets/img/animals-bg-right@1x.png" srcset="assets/img/animals-bg-right@2x.png 2x" alt=""
+                    class="pets__bg-img pets__bg-img--right">
+            </picture>
+        </section>
+        <section class="feed">
+            <div class="container container--feed">
+                <div class="feed__wrap">
+                    <h2 class="feed__title">Pick and feed a friend</h2>
+                    <p class="feed__subtitle">We know the animals bring you joy, and in these extraordinary times, we’re
+                        glad.</p>
+                    <div class="feed__text-wrap">
+                        <p class="feed__text-info">During a time when the COVID-19 epidemic is touching all of our
+                            lives, we’re proud and glad that people around the world find joy in PetStory.</p>
+                        <p class="feed__text">Even though the zoo has reopened, we need you now more than ever to help
+                            us deal with these problems. Please consider <br class="feed__text-br"> a gift to our <a
+                                href="donate.html" class="feed__text-link">Emergency Support Fund</a>. </p>
+                    </div>
+                    <div class="feed__explain">
+                        <h3 class="feed__explain-title">How it works</h3>
+                        <ul class="feed__explain-list">
+                            <li class="feed__explain-item">
+                                <div class="feed__explain-item-img-wrap">
+                                    <svg class="feed__explain-item-img feed__explain-item-img--pay">
+                                        <use href="assets/icons/sprite.svg#pay"></use>
+                                    </svg>
+                                </div>
+                                <span class="feed__explain-item-text">Pay with card</span>
+                            </li>
+                            <li class="feed__explain-item">
+                                <div class="feed__explain-item-img-wrap">
+                                    <img class="feed__explain-item-img feed__explain-item-img--zoo"
+                                        src="assets/icons/zoo.svg" alt="">
+                                </div>
+                                <span class="feed__explain-item-text">Payment goes to the zoo</span>
+                            </li>
+                            <li class="feed__explain-item">
+                                <div class="feed__explain-item-img-wrap">
+                                    <svg class="feed__explain-item-img feed__explain-item-img--monkey">
+                                        <use href="assets/icons/sprite.svg#monkey"></use>
+                                    </svg>
+                                </div>
+                                <span class="feed__explain-item-text">Your favourite animal gets delicious dish</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="donate.html" class="btn btn--feed">Feed a friend now</a>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <div class="testimonials__wrap">
+                    <h2 class="testimonials__title">Testimonials</h2>
+                    <div class="swiper testimonials-swiper">
+                        <ul class="testimonials-cards swiper-wrapper">
+                            <li class="testimonials-card swiper-slide swiper-slide--testimonials">
+                                <div class="testimonials-card__head">
+                                    <img src="assets/img/avatars/user-icon.png" alt="" class="testimonials-card__ava">
+                                    <div class="testimonials-card__info">
+                                        <span class="testimonials-card__name">Michael John</span>
+                                        <div class="testimonials-card__info-bottom">
+                                            <span class="testimonials-card__geo">Local Austria</span>
+                                            <span class="testimonials-card__time">Today</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="testimonials-card__text">The best online zoo I’ve met. My son delighted very
+                                    much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for
+                                    animals.The best online zoo I’ve met. My son delighted very much ljves to watch
+                                    gouillas. Online zoo is one jf the ways to instill a love for animals.</p>
+                                <p class="testimonials-card__text">
+                                    The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                    Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve
+                                    met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the
+                                    ways to instill a love for
+                                </p>
+                            </li>
+                            <li class="testimonials-card swiper-slide swiper-slide--testimonials">
+                                <div class="testimonials-card__head">
+                                    <img src="assets/img/avatars/oskar-samborsky.jpg" alt=""
+                                        class="testimonials-card__ava">
+                                    <div class="testimonials-card__info">
+                                        <span class="testimonials-card__name">Oskar Samborsky</span>
+                                        <div class="testimonials-card__info-bottom">
+                                            <span class="testimonials-card__geo">Local Austria</span>
+                                            <span class="testimonials-card__time">Yesterday</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="testimonials-card__text">Online zoo is one jf the ways to instill a love for
+                                    animals.The best online zoo I’ve met. My son delighted very much ljves to watch
+                                    gouillas. Online zoo is one jf the ways to instill a love for animals.The best
+                                    online zoo I’ve met. My son delighted very much ljves to watch gouillas. </p>
+                                <p class="testimonials-card__text">The best online zoo I’ve met. My son delighted very
+                                    much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for
+                                    animals.The best online zoo I’ve met. My son delighted very much ljves to watch
+                                    gouillas. Online zoo is one jf the ways to instill a love for</p>
+                            </li>
+                            <li class="testimonials-card swiper-slide swiper-slide--testimonials">
+                                <div class="testimonials-card__head">
+                                    <img src="assets/img/avatars/fredericka-michelin.jpg" alt=""
+                                        class="testimonials-card__ava">
+                                    <div class="testimonials-card__info">
+                                        <span class="testimonials-card__name">Fredericka Michelin</span>
+                                        <div class="testimonials-card__info-bottom">
+                                            <span class="testimonials-card__geo">Local Austria</span>
+                                            <span class="testimonials-card__time">Yesterday</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="testimonials-card__text">The best online zoo I’ve met. My son delighted very
+                                    much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for
+                                    animals.The best online zoo I’ve met. My son delighted very much ljves to watch
+                                    gouillas. Online zoo is one jf the ways to instill a love for animals.</p>
+                                <p class="testimonials-card__text">The best online zoo I’ve met. My son delighted very much ljves to watch
+                                    gouillas. Online zoo is one jf the ways to instill a love for animals.The best
+                                    online zoo I’ve met.</p>
+                                <p class="testimonials-card__text">The best online zoo I’ve met. My son delighted very much ljves to </p>
+                            </li>
+                            <li class="testimonials-card swiper-slide swiper-slide--testimonials">
+                                <div class="testimonials-card__head">
+                                    <img src="assets/img/avatars/mila-riksha.jpg" alt="" class="testimonials-card__ava">
+                                    <div class="testimonials-card__info">
+                                        <span class="testimonials-card__name">Mila Riksha</span>
+                                        <div class="testimonials-card__info-bottom">
+                                            <span class="testimonials-card__geo">Local Austria</span>
+                                            <span class="testimonials-card__time">Yesterday</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="testimonials-card__text">My son delighted very much ljves to watch gouillas.
+                                    Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve
+                                    met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the
+                                    ways to instill a love for animals.The best online zoo I’ve met. My son delighted
+                                    very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love
+                                    for animals.The best online zoo I’ve met. My son delighted very much ljves to watch
+                                    gouillas.</p>
+                                <p class="testimonials-card__text">The best online zoo I’ve met. My son delighted very
+                                    much ljves to watch gouillas. Online zoo is one jf </p>
+                            </li>
+                            <li class="testimonials-card swiper-slide swiper-slide--testimonials">
+                                <div class="testimonials-card__head">
+                                    <img src="assets/img/avatars/dimitry-leonte.jpg" alt="" class="testimonials-card__ava">
+                                    <div class="testimonials-card__info">
+                                        <span class="testimonials-card__name">Dimitry Leonte</span>
+                                        <div class="testimonials-card__info-bottom">
+                                            <span class="testimonials-card__geo">Local Serbia</span>
+                                            <span class="testimonials-card__time">Today</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="testimonials-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At illum aliquid, facilis voluptatum praesentium quaerat? Eligendi commodi nesciunt sed accusantium quaerat impedit tempora exercitationem dolor perferendis voluptatum adipisci, doloremque eos possimus laudantium nihil repudiandae sequi dolore doloribus hic ipsum esse iure reprehenderit quia veniam! Libero vel dolores soluta deserunt quidem!</p>
+                            </li>
+                            <li class="testimonials-card swiper-slide swiper-slide--testimonials">
+                                <div class="testimonials-card__head">
+                                    <img src="assets/img/avatars/rathier-longfoot.jpg" alt=""
+                                        class="testimonials-card__ava">
+                                    <div class="testimonials-card__info">
+                                        <span class="testimonials-card__name">Rathier Longfoot</span>
+                                        <div class="testimonials-card__info-bottom">
+                                            <span class="testimonials-card__geo">Local Esgaroth</span>
+                                            <span class="testimonials-card__time">Yesterday</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="testimonials-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero maxime hic aperiam voluptatum repellat! Ut eum distinctio eaque dolores quod dolorem excepturi, rerum fugiat, dicta assumenda numquam obcaecati, facilis eos voluptas. Deserunt, harum consequatur dolorem quas nihil voluptatibus praesentium, explicabo molestias accusantium sunt sapiente quo ipsa architecto facere beatae quasi distinctio consectetur ea autem quam a? </p>
+                            </li>
+                            <li class="testimonials-card swiper-slide swiper-slide--testimonials">
+                                <div class="testimonials-card__head">
+                                    <img src="assets/img/avatars/bilbo-wanderfoot.jpg" alt=""
+                                        class="testimonials-card__ava">
+                                    <div class="testimonials-card__info">
+                                        <span class="testimonials-card__name">Bilbo Wanderfoot</span>
+                                        <div class="testimonials-card__info-bottom">
+                                            <span class="testimonials-card__geo">Local Rivendell</span>
+                                            <span class="testimonials-card__time">Yesterday</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="testimonials-card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero eligendi rerum tempore nulla voluptates ullam sit! Tenetur corrupti culpa veniam. Voluptates facilis id nisi consequuntur nihil saepe, possimus magni voluptate placeat consectetur consequatur necessitatibus, beatae maxime repellendus ratione sit eveniet voluptatum qui et? Aut adipisci labore reiciendis minima assumenda, voluptates delectus! Soluta repellendus animi ut atque mollitia blanditiis cumque. Temporibus, rem atque.</p>
+                                
+                            </li>
+                            <li class="testimonials-card swiper-slide swiper-slide--testimonials">
+                                <div class="testimonials-card__head">
+                                    <img src="assets/img/avatars/folco-knotwise.jpg" alt="" class="testimonials-card__ava">
+                                    <div class="testimonials-card__info">
+                                        <span class="testimonials-card__name">Folco Knotwise</span>
+                                        <div class="testimonials-card__info-bottom">
+                                            <span class="testimonials-card__geo">Local Shire</span>
+                                            <span class="testimonials-card__time">Yesterday</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="testimonials-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt perspiciatis provident nemo vero impedit fugit ipsum, illum laborum ad reiciendis, repellendus reprehenderit delectus, omnis expedita nihil hic tempore asperiores dolore doloribus adipisci eligendi. Hic dignissimos cum, vel eveniet nemo aspernatur at dolorem minima nisi enim facere explicabo, alias eaque! Iure labore atque iusto doloremque.</p>
+                            </li>
+                            <li class="testimonials-card swiper-slide swiper-slide--testimonials">
+                                <div class="testimonials-card__head">
+                                    <img src="assets/img/avatars/timba-gamgee.jpg" alt="" class="testimonials-card__ava">
+                                    <div class="testimonials-card__info">
+                                        <span class="testimonials-card__name">Timba Gamgee</span>
+                                        <div class="testimonials-card__info-bottom">
+                                            <span class="testimonials-card__geo">Local Andunie</span>
+                                            <span class="testimonials-card__time">Yesterday</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="testimonials-card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis nulla dolore tempore incidunt mollitia dolorum, earum, non laborum voluptatum repudiandae aspernatur laboriosam culpa architecto blanditiis porro velit provident ut adipisci repellat, distinctio similique! Quis voluptatibus magni deserunt. Deserunt veritatis, repudiandae provident fugit, repellendus voluptatem eos sit suscipit a perferendis facilis maiores. Porro cumque repudiandae quaerat odio soluta, hic ratione nostrum alias.</p>
+                            </li>
+                            <li class="testimonials-card swiper-slide swiper-slide--testimonials">
+                                <div class="testimonials-card__head">
+                                    <img src="assets/img/avatars/rathar-pott.jpg" alt="" class="testimonials-card__ava">
+                                    <div class="testimonials-card__info">
+                                        <span class="testimonials-card__name">Rathar Pott</span>
+                                        <div class="testimonials-card__info-bottom">
+                                            <span class="testimonials-card__geo">Local Isengard</span>
+                                            <span class="testimonials-card__time">Yesterday</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="testimonials-card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi nam ad repellendus vero similique quo et. Porro aspernatur veritatis eligendi officiis debitis beatae harum fugit voluptatibus, aperiam pariatur ratione laudantium odit minus! Nihil, laboriosam exercitationem asperiores vitae ex in, ducimus maxime illum tempore nulla voluptate iure quibusdam perferendis dicta nam autem velit magnam doloribus officiis amet quae. Quae repellat unde deleniti numquam sequi autem harum quidem dignissimos, perspiciatis, ut quod optio?</p>
+                            </li>
+                            <li class="testimonials-card swiper-slide swiper-slide--testimonials">
+                                <div class="testimonials-card__head">
+                                    <img src="assets/img/avatars/angilbert-pott.jpg" alt="" class="testimonials-card__ava">
+                                    <div class="testimonials-card__info">
+                                        <span class="testimonials-card__name">Angilbert Pott</span>
+                                        <div class="testimonials-card__info-bottom">
+                                            <span class="testimonials-card__geo">Local Calembel </span>
+                                            <span class="testimonials-card__time">Yesterday</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="testimonials-card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, reprehenderit vero, sit voluptatem harum hic magni aut quasi voluptatibus sed debitis adipisci temporibus nemo totam quaerat repellat esse ipsum quod amet, illum expedita! Facilis fugiat ipsum eum, quo cupiditate asperiores quas tenetur magni iure totam ipsam hic porro, harum dolorem labore, ea fugit consectetur numquam perferendis distinctio? Fugit repellendus tempora illo error debitis illum veniam voluptas.</p>
+                            </li>
+                        </ul>
+                        <div class="testimonials-swiper-scrollbar-wrap">
+                            <div class="swiper-scrollbar testimonials-swiper-scrollbar">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn--testimonials">leave feedback</button>
+                </div>
+            </div>
+            <picture class="testimonials__bg-img-wrap">
+                <source srcset="assets/img/testimonials-bg@1x.webp 1x,
+                                assets/img/testimonials-bg@2x.webp 2x" type="image/webp">
+                <img 
+                src="assets/img/testimonials-bg@1x.png" 
+                srcset="assets/img/testimonials-bg@2x.png 2x" alt=""
+                    class="testimonials__bg-img">
+            </picture>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer-links">
+                    <a href="index.html" class="footer-links__logo">
+                        <span class="footer-links__logo-title">PetStory <br class="footer-links__logo-title--br"> <span class="footer-links__logo--span">online</span></span>
+                    </a>
+                    <a href="donate.html" class="btn btn--footer">donate for volunteers</a>
+                    <ul class="footer-links__social-list">
+                        <li class="footer-links__social-item">
+                            <a href="https://facebook.com/" target="_blank" rel="nofollow noopener" class="footer-links__social-link">
+                                <div class="footer-links__social-link-img-wrap">
+                                    <svg class="footer-links__social-link-img">
+                                        <use href="assets/icons/sprite.svg#fb"></use>
+                                    </svg>
+                                </div>
+                                <span class="footer-links__social-link-text">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="footer-links__social-item">
+                            <a href="https://twitter.com/" target="_blank" rel="nofollow noopener" class="footer-links__social-link">
+                                <div class="footer-links__social-link-img-wrap">
+                                    <svg class="footer-links__social-link-img">
+                                        <use href="assets/icons/sprite.svg#twitter"></use>
+                                    </svg>
+                                </div>
+                                <span class="footer-links__social-link-text">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="footer-links__social-item">
+                            <a href="https://www.instagram.com" target="_blank" rel="nofollow noopener" class="footer-links__social-link">
+                                <div class="footer-links__social-link-img-wrap">
+                                    <svg class="footer-links__social-link-img">
+                                        <use href="assets/icons/sprite.svg#instagram"></use>
+                                    </svg>
+                                </div>
+                                <span class="footer-links__social-link-text">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="footer-links__social-item">
+                            <a href="https://www.youtube.com/" target="_blank" rel="nofollow noopener" class="footer-links__social-link">
+                                <div class="footer-links__social-link-img-wrap">
+                                    <svg class="footer-links__social-link-img">
+                                        <use href="assets/icons/sprite.svg#youtube"></use>
+                                    </svg>
+                                </div>
+                                <span class="footer-links__social-link-text">YouTube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link footer-nav__link--active">About</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Map</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Zoos</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Contact&nbsp;us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer-newsletter">
+                    <h2 class="footer-newsletter__title">Subscribe to our news</h2>
+                    <form action="/" method="GET" id="form" class="footer-newsletter__form">
+                        <div class="footer-newsletter__input-wrap" id="email-wrap">
+                            <input type="email" name="email" id="email" class="footer-newsletter__input" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="footer-newsletter__btn" id="button">Submit</button>
+                    </form>
+                    <div class="footer-designed">
+                        <span class="footer-designed__text">Designed by Alisa Samborskaya</span>
+                        <span class="footer-designed__text">&#169;RSSchool & &#169;Yem Digital 2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="body-overlay"></div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
