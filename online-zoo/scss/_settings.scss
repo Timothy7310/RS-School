@@ -1,0 +1,250 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-anchor: none;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    scroll-behavior: smooth;
+    margin: 0px;
+}
+
+body.lock{
+    overflow: hidden;
+}
+.body-overlay{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 4;
+    background: rgba(41, 41, 41, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: ease 0.5s;
+    &--visible{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1190px;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--btn-bg);
+    background-color:#fd8e1b;
+    width: 298px;
+    height: 54px;
+    text-align: center;
+    color: var(--color-light);
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: var(--fz-primary);
+    line-height: var(--lh);
+    font-weight: 500;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: ease 0.5s;
+    &:hover{
+        background: none;
+        background-color:var(--btn-bg-hover);
+    }
+    &:active{
+        background: none;
+        background-color:var(--btn-bg-active);
+    }
+    &:disabled{
+        background: none;
+        background-color: var(--btn-bg-disable);
+        cursor: no-drop;
+    }
+}
+
+picture img {
+    vertical-align: bottom;
+}
+
+.header__burger{
+    display: none;
+}
+
+.clamp-text-2{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.popup__container .clamp-text-2{
+    -webkit-line-clamp: inherit;
+    overflow: visible;
+}
+
+.popup{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    &__overlay{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 100;
+        background: rgba(41,41,41,0.6);
+        visibility: hidden;
+        opacity: 0;
+        cursor: pointer;
+        &--visible{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    &__container{
+        background-color: var(--color-light-s);
+        border-radius: 9px;
+        display: flex;
+        width: 100%;
+        max-width: 269px;
+        justify-content: space-between;
+        position: relative;
+        z-index: 101;
+        visibility: hidden;
+        opacity: 0;
+        &--visible{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    &__btn{
+        position: absolute;
+        top: 0px;
+        right: -22px;
+        width: 14px;
+        height: 14px;
+        border: none;
+        cursor: pointer;
+        background-image: url(../assets/icons/popup-close.svg);
+        background-color: transparent;
+    }
+}
+
+// @keyframes fadeIn {
+//     from {
+//         visibility: hidden;
+//         opacity: 0;
+//     }
+  
+//     to {
+//         visibility: visible;
+//         opacity: 1;
+//     }
+// }
+
+@keyframes toLeftNext {
+    from {
+      left: 0;
+    }
+    to {
+      left: -100%;
+    }
+}
+
+@keyframes toRightNext {
+    from {
+      left: 0;
+    }
+    to {
+      left: -100%;
+    }
+}
+
+@keyframes toLeftPrev {
+    from {
+      left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes toRightPrev {
+    from {
+      left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.pets-cards-overflow {
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.pets-cards--to-left-next {
+    animation: toLeftNext 1s ease forwards;
+}
+
+.pets-cards--to-right-next {
+    animation: toRightNext 1s ease forwards;
+}
+
+.pets-cards--to-right-prev {
+    animation: toRightPrev 1s ease forwards;
+}
+
+.pets-cards--to-left-prev {
+    animation: toLeftPrev 1s ease forwards;
+}
