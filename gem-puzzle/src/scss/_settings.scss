@@ -1,0 +1,257 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-anchor: none;
+    overflow-x: hidden;
+    font-family: "ArcadeClassic", sans-serif;
+    font-weight: normal;
+    scroll-behavior: smooth;
+    margin: 0px;
+    background: linear-gradient(#0c141f 40%, #cf33d9 41%, #0c141f 60%);
+    overflow-x: hidden;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body.lock{
+    overflow: hidden;
+}
+.body-overlay{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 4;
+    background: rgba(41, 41, 41, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: ease 0.5s;
+    &--visible{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0px auto;
+    padding: 0 15px;
+    max-width: 1190px;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+picture img {
+    vertical-align: bottom;
+}
+
+@keyframes moveUp{
+    0% {
+      background-position: -1px -1px, -1px -1px;
+    }
+    100% {
+      background-position: -50px -50px, -1px -1px;
+    }
+}
+
+.landscape{
+    position: absolute;
+    width: 200%;
+    left: -50%;
+    height: 130%;
+    bottom: -30%;
+    background-image: -webkit-linear-gradient(top, #CF33D9 2px, transparent 2px), -webkit-linear-gradient(left, #CF33D9 2px, transparent 2px);
+    background-size: 50px 50px, 80px 80px;
+    background-position: -1px -1px, -1px -1px;
+    transform: rotateX(85deg);
+    animation: moveUp 1s infinite linear;
+    &__wrap{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin: 0 auto;
+        perspective: 180px;
+        perspective-origin: 50% 40%;
+        overflow: hidden;
+    }
+}
+
+@keyframes puzzleDisappear {
+    0% {
+        scale: 1;
+    }
+    100% {
+        scale: 0;
+    }
+}
+
+@keyframes puzzleAppear {
+    0% {
+        scale: 0;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes toRight {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: -100%;
+    }
+}
+
+@keyframes toLeft {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes toBottom {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: -100%;
+    }
+}
+
+@keyframes toTop {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -100%;
+    }
+}
+
+.toRight {
+    animation: toRight 0.5s linear;
+}
+
+.toLeft {
+    animation: toLeft 0.5s linear;
+}
+
+.toBottom {
+    animation: toBottom 0.5s linear;
+}
+
+.toTop {
+    animation: toTop 0.5s linear;
+}
+
+.appear{
+    animation: puzzleAppear 0.5s linear;
+}
+
+.disappear{
+    animation: puzzleDisappear 0.5s linear;
+}
+
+.popup{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 108;
+    scale: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    &--visible{
+        scale: 1;
+        visibility: visible;
+        opacity: 1;
+    }
+    &__overlay{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 100;
+        background: rgba(41,41,41,0.6);
+        visibility: hidden;
+        opacity: 0;
+        &--visible{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    &__container{
+        width: 95%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: beige;
+        position: relative;
+        z-index: 101;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        text-align: center;
+        color: var(--color-primary);
+    }
+    &__info{
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    &__btn{
+        background: url('../assets/icons/exit.png') no-repeat;
+        background-size: 100% 100%;
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+    }
+}
