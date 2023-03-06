@@ -1,0 +1,21 @@
+.header-pets{
+    background: var(--color-light-xl);
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    &__wrap{
+        padding: 27px 0px;
+    }
+    &__logo{
+        color: var(--color-dark-l);
+        &-text{
+            color:var(--color-dark-3xl)
+        }
+        &-container{
+            row-gap: 7px;
+        }
+    }
+    &__nav-link{
+        color: var(--color-dark-l);
+    }
+}

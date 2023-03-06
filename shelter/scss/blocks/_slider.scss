@@ -1,0 +1,13 @@
+.swiper--main{
+    width: 100%;
+    max-width: calc((270px * 3) + (90px * (3 - 1)));
+    overflow: visible;
+}
+
+.swiper-slide{
+    visibility: hidden;
+}
+
+.swiper-slide-visible{
+    visibility: visible;
+}

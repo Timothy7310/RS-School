@@ -1,0 +1,34 @@
+.about{
+    &__wrap{
+        padding: 80px 0px 100px 0px;
+        display: flex;
+        justify-content: center;
+        column-gap: 120px;
+    }
+    &__text-container{
+        max-width: 430px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        margin-top: 17px;
+    }
+    &__title{
+        font-size: var(--fz-h2);
+        line-height: var(--lh);
+        letter-spacing: 0.06em;
+        color: var(--color-dark-l);
+        font-weight: 400;
+        margin: 0px;
+    }
+    &__info{
+        font-family: "Arial", sans-serif;
+        font-size: var(--fz-primary);
+        line-height: calc(var(--lh) * 1.21);
+        color: var(--color-dark-xl);
+        margin: 0px;
+    }
+    &__img-container{
+        max-width: 300px;
+        align-self: end;
+    }
+}

@@ -1,0 +1,52 @@
+.our-friends{
+    background-color: var(--color-light-l);
+    overflow-x: hidden;
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+        row-gap: 58px;
+        align-items: center;
+        padding: 80px 0px 100px 0px;
+    }
+    &__title{
+        font-size: var(--fz-h2);
+        line-height: var(--lh);
+        text-align: center;
+        margin: 0px;
+        color: var(--color-dark-l);
+        font-weight: 400;
+        letter-spacing: 0.06em;
+    }
+    &__cards{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__btn{
+        width: 52px;
+        height: 52px;
+        border-radius: 100%;
+        border: 2px solid var(--color-primary);
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        transition: background-color 0.4s ease-in-out,
+                    border 0.4s ease-in-out;
+        &-img{
+            fill: var(--color-dark-3xl);
+            width: 20px;
+            height: 8px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition: fill 0.4s ease-in-out;
+        }
+        &:hover{
+            background-color: var(--color-primary-light);
+            border: 2px solid var(--color-primary-light);
+        }
+    }
+}
