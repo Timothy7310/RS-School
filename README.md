@@ -9,7 +9,7 @@
 
 ## 2023Q3 stage 1
 1. [Online-Zoo](https://timothy7310.github.io/RS-School/online-zoo/index.html) - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/stream2/online-zoo/README.md)
-2. [Puzzle Game]() - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/stage-1/dom-api/codejam-the-gem-puzzle.md)
+2. [Puzzle Game](https://timothy7310.github.io/RS-School/gem-puzzle/index.html) - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/stage-1/dom-api/codejam-the-gem-puzzle.md)
 3. [Song Bird]() - [task description](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/songbird/songbird-2022q3.md)
 
 ## 2023Q3 stage 2
