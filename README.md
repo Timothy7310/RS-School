@@ -50,14 +50,14 @@
 ## 2023Q3 stage 2
 
 ### MG-to-TS
-- `Deploy:` [link]()  
-- `Task description:` [link]()  
+- `Deploy:` [link](https://timothy7310.github.io/RS-School/migration-to-ts/index.html)  
+- `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/migration-newip-to-ts.md)  
 - `School's private repository`
 
 ### Online-Store
-- `Deploy:` [link]()  
+- `Deploy:` [link](https://timothy7310.github.io/RS-School/online-store/index.html)  
 - `Task description:` [link](https://github.com/rolling-scopes-school/tasks/tree/master/tasks/online-store-team)  
-- `For watch commit history:` [link]()
+- `For watch commit history:` [link](https://github.com/AndrewMotevich/online-store/tree/develop)
 
 ### Async Race
 - `Deploy:` [link](https://timothy7310.github.io/RS-School/async-race/index.html)  
@@ -66,6 +66,6 @@
 - `Server`: [link](https://github.com/mikhama/async-race-api)
 
 ### RS-Clone
-- `Deploy:` [link](https://timothy7310.github.io/RS-School/async-race/index.html)  
+- `Deploy:` [link](https://effulgent-youtiao-4fc924.netlify.app/#/main)  
 - `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/rsclone/rsclone.md)  
-- `For watch commit history:` [link]()
+- `For watch commit history:` [link](https://github.com/Timothy7310/RS-Clone/tree/develop)
