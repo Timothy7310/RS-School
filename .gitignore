@@ -3,3 +3,4 @@ app
 dist
 build
 package-lock.json
+!migration-to-ts/src/components/app

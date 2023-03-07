@@ -1,0 +1,92 @@
+:root {
+    --color-white: #F7F9FC;
+    --color-dark: #0A0C14;
+    --color-accent: #E20074;
+    --color-sub-text: #A3AABF;
+    --color-source-item: #30c5ff;
+    --bg-news: #262C3B;
+}
+
+body {
+    color: var(--color-white);
+    background: var(--color-dark);
+    font-family: sans-serif;
+}
+
+header {
+    padding: 10px 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--color-white);
+}
+
+header h1::first-letter{
+    color: var(--color-accent);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+footer .copyright {
+    font-size: 14px;
+    color: var(--color-sub-text);
+    text-align: center;
+}
+footer .copyright a {
+    color: var(--color-white);
+    transition: 0.3s ease-in-out;
+}
+footer .copyright a:hover {
+    color: var(--color-accent);
+}
+footer .copyright:before {
+    content: '©';
+}
+
+.footer__info {
+    grid-gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__info-author {
+    align-self: flex-start;
+    color: var(--color-white);
+    transition: color .3s ease-in-out;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+.footer__info-author:hover {
+    color: var(--color-accent);
+}
+
+.footer__info-year {
+    color: var(--color-white);
+}
+
+.footer__rss-logo-img {
+    width: 100px;
+}
+
+@media (max-width:600px) {
+    footer{
+        flex-direction: column;
+    }
+    .footer__info-author {
+        align-self: center;
+    }
+}
+
+@media (max-width:480px) {
+    header h1{
+        text-align: center;
+        font-size: 35px;
+    }
+}
