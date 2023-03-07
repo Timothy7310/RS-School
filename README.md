@@ -34,17 +34,17 @@
 ### Online-Zoo
 - `Deploy:` [link](https://timothy7310.github.io/RS-School/online-zoo/index.html)  
 - `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/stream2/online-zoo/README.md)  
-- `school's private repository`
+- `School's private repository`
 
 ### Puzzle Game
 - `Deploy:` [link](https://timothy7310.github.io/RS-School/gem-puzzle/index.html)  
 - `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/stage-1/dom-api/codejam-the-gem-puzzle.md)  
-- `school's private repository`
+- `School's private repository`
 
 ### Song Bird
 - `Deploy:` [link](https://timothy7310.github.io/RS-School/song-bird/index.html)  
 - `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/songbird/songbird-2022q3.md)  
-- `school's private repository`
+- `School's private repository`
 
 
 ## 2023Q3 stage 2
@@ -52,7 +52,7 @@
 ### MG-to-TS
 - `Deploy:` [link]()  
 - `Task description:` [link]()  
-- `school's private repository`
+- `School's private repository`
 
 ### Online-Store
 - `Deploy:` [link]()  
@@ -63,7 +63,7 @@
 - `Deploy:` [link](https://timothy7310.github.io/RS-School/async-race/index.html)  
 - `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/async-race.md#cross-check)  
 - `school's private repository`
-- `server`: [link](https://github.com/mikhama/async-race-api)
+- `Server`: [link](https://github.com/mikhama/async-race-api)
 
 ### RS-Clone
 - `Deploy:` [link](https://timothy7310.github.io/RS-School/async-race/index.html)  
