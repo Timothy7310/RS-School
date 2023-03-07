@@ -16,7 +16,7 @@
 ### CSS-Meme-Slider
 - `Deploy:` [link](https://timothy7310.github.io/RS-School/cssMemSlider/index.html)  
 - `Task description:` [link](https://github.com/rolling-scopes-school/tasks/tree/master/tasks/css-meme-slider)  
-- `For watch commit history:` [link](https://github.com/Timothy7310/cssMemSlider)
+- `For watch commit history:` [link](https://github.com/Timothy7310/cssMemSlider/tree/gh-pages)
 
 ### HTML Builder
 - `Work with Node JS` (without deploy)  
