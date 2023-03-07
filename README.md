@@ -49,7 +49,7 @@
 
 ## 2023Q3 stage 2
 
-### MG-to-TS
+### Migration to TS
 - `Deploy:` [link](https://timothy7310.github.io/RS-School/migration-to-ts/index.html)  
 - `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/migration-newip-to-ts.md)  
 - `School's private repository`
