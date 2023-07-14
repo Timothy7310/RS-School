@@ -82,3 +82,13 @@
 - `Deploy:` [link](https://sweet-bubblegum-0225c9.netlify.app/)  
 - `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/react/modules/graphiql.md)  
 - `For watch commit history:` [link](https://github.com/bloodsuckers-spb/graphiql-app/pull/33)
+
+## 2023Q2 Node JS
+
+### Node JS basic tasks
+- `Task description:` [link](https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/nodejs-basics/assignment.md)  
+- `For watch commit history:` [link](https://github.com/Timothy7310/node-nodejs-basics)
+
+### File Manager
+- `Task description:` [link](https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/file-manager/assignment.md)  
+- `For watch commit history:` [link](https://github.com/Timothy7310/File-Manager)
