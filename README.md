@@ -66,7 +66,7 @@
 - `Server`: [link](https://github.com/mikhama/async-race-api)
 
 ### RS-Clone
-- `Deploy:` [link](https://effulgent-youtiao-4fc924.netlify.app/#/main)  
+- `Deploy:` [link](https://rs-clone-kinopoisk.netlify.app/#/main)  
 - `Task description:` [link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/rsclone/rsclone.md)  
 - `For watch commit history:` [link](https://github.com/Timothy7310/RS-Clone/tree/develop)
 
@@ -74,7 +74,7 @@
 ## 2023Q1 React
 
 ### Basics of React
-- `Deploy:` [link](https://spontaneous-jalebi-0361a1.netlify.app/)  
+- `Deploy:` [link](https://secret-shop-films.netlify.app/)  
 - `Task description:` [Components](https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module01) | [Forms](https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module02) | [Hooks](https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module03) | [API](https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module04) | [Redux](https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module05) | [SSR\SSG](https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module06)
 - `For watch commit history:` [link](https://github.com/Timothy7310/RS-React)
 
